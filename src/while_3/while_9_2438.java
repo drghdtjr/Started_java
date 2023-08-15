@@ -16,5 +16,7 @@ public class while_9_2438 {
             System.out.println();
             i++;
         }
+
+
     }
 }
