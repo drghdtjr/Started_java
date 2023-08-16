@@ -8,5 +8,6 @@ public class one_5_10810 {
         int n= sc.nextInt();
         int m= sc.nextInt();
 
+
     }
 }
