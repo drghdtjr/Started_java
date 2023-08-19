@@ -7,11 +7,9 @@ public class one_7_5597 {
         Scanner sc=new Scanner(System.in);
         int arr[]=new int[30];
         int i=1;
-        while(i<=28){
-            arr[i]= sc.nextInt();
+        while(i<=28) {
+            arr[i] = sc.nextInt();
             i++;
         }
-        while()
-
     }
 }
