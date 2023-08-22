@@ -11,7 +11,7 @@ public class one_6_10813 {
         int i=0;
         int temp=0;
         while(i< arr.length){
-            arr[i]=i+1;
+            arr[i]=i;
             i++;
         }
         int j=0;

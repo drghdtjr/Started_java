@@ -1,35 +1,35 @@
-package oneArrange_4;
+package Note;
 
 import java.util.Scanner;
 
-public class one_5_10810 {
+public class note_4 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n= sc.nextInt();
-        int [] arr=new int [n];
+        int arr[]=new int[n];
         int m= sc.nextInt();
-        int i=0;
-        while(i<m){
-
-            int I= sc.nextInt();
-            int J= sc.nextInt();
-            int K= sc.nextInt();
-            int j=I-1;
-            while(j<J) {
-                arr[j]=K;
-                j++;
+        int a=0;
+        while(a<m){
+            int i=sc.nextInt();
+            int j=sc.nextInt();
+            int k=sc.nextInt();
+            int x=i-1;
+            while(x<j){
+                arr[x]=k;
+                x++;
             }
-            i++;
+            a++;
         }
-        int k=0;
-        while(k< arr.length){
-            System.out.print(arr[k]+" ");
-            k++;
+        int c=0;
+        while(c<arr.length){
+            System.out.print(arr[c]+" ");
+            c++;
         }
-
 
     }
 }
+
+
 
 /*
 첫째 줄에 N (1 ≤ N ≤ 100)과 M (1 ≤ M ≤ 100)이 주어진다.
