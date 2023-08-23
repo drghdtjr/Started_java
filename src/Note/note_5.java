@@ -12,7 +12,7 @@ public class note_5 {
         int temp=0;
         int z=0;
         while(z< arr.length){
-            arr[z]=z;
+            arr[z]=z+1;
             z++;
         }
         while(a<m){
