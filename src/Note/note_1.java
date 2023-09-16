@@ -11,6 +11,7 @@ public class note_1 {
             int k=n-i;
             int j=1;
             while(j<k){
+
                 System.out.print(" ");
                 j++;
             }
