@@ -29,7 +29,9 @@ public class deepening1_3_2444 {
                 j++;
             }
             int y=0;
-            while(){
+            while(y<2*(n-d)-3){
+                System.out.print("*");
+                y++;
 
             }
             d++;
@@ -37,3 +39,4 @@ public class deepening1_3_2444 {
         }
     }
 }
+
