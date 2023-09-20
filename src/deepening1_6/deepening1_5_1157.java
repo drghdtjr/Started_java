@@ -9,10 +9,30 @@ public class deepening1_5_1157 {
         int []arr=new int [26];
         int i=0;
         while(i<st.length()){
-            if(){
+            if('A'<= st.charAt(i)&&st.charAt(i)<='Z'){
+                arr[st.charAt(i)-'A']++;
 
             }
+            else{
+                arr[st.charAt(i)-'a']++;
+            }
             i++;
+
         }
+        int j=0;
+        int max=-1;
+        char ch='?';
+        while(j<26){
+            if(arr[j]>max) {
+                max = arr[j];
+                ch=(char)(j+65);
+            }
+            else if (arr[j]==max){
+                ch='?';
+            }
+            j++;
+        }
+        System.out.println(ch);
     }
 }
+
