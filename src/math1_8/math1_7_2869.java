@@ -8,19 +8,11 @@ public class math1_7_2869 {
         int a=sc.nextInt();
         int b=sc.nextInt();
         int v=sc.nextInt();
-        int k=a-b;
-        int count=0;
-        int i=0;
-        while(i<v){
-            int j=k*count;
-            if(j>=v){
-                break;
-            }
-            else{
-                count++;
-            }
-            i++;
+        int day=(v-b)/(a-b);
+        if((v-b)%(a-b)!=0){
+            day++;
         }
-        System.out.println(count);
+        System.out.println(day);
     }
 }
+
