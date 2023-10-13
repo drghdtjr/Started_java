@@ -14,19 +14,24 @@ public class brute_1_2798 {
             i++;
         }
         int j=0;
-        int k=n*(n-1)*(n-2)/3;
-        int arr_sum[]=new int[k];
-        int a=0;
-        while(j<k){
-            int z=0;
-            while(z<=j){
-                arr_sum[a]=arr_n[z]+arr_n[z+1]+arr_n[z+2];
-                z++;
+        int result=0;
+        int sum=0;
+        while(j<n){
+            int k=j+1;
+            while(k<n){
+                int s=k+1;
+                while(s<n){
+                    sum=arr_n[j]+arr_n[k]+arr_n[s];
+                    if(result<sum&&sum<=m){
+                        result=sum;
+                    }
+                    s++;
+                }
+                k++;
             }
             j++;
-            a++;
-
         }
+        System.out.println(result);
 
     }
 }
