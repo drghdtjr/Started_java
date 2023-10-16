@@ -8,16 +8,7 @@ public class brute_4_1018 {
         int n= sc.nextInt();
         int m= sc.nextInt();
         int i=0;
-        String arr[]=new String[m]
-        while(i<n){
-            String st= sc.next();
-            int j=0;
-            while(j<m){
-                arr[j]=st.charAt(j);
+        String []arr=new String[n];
 
-                j++;
-            }
-            i++;
-        }
     }
 }
