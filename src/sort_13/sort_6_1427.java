@@ -16,10 +16,11 @@ public class sort_6_1427 {
             i++;
         }
         Arrays.sort(arr);
-        int k=0;
-        while(k< arr.length){
-            System.out.print(arr.length-k);
-            k++;
+        int k=arr.length-1;
+        while(k!=-1){
+
+            System.out.print(arr[k]);
+            k--;
         }
     }
 }
