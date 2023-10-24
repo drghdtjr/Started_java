@@ -14,8 +14,19 @@ public class sort_7_11650 {
             arr[i][1]= sc.nextInt();
             i++;
         }
-
-
+        Arrays.sort(arr,(e1,e2)->{
+            if(e1[0]==e2[0]){
+                return e1[1]-e2[1];
+            }
+            else{
+                return e1[0]-e2[0];
+            }
+        });
+        int k=0;
+        while(k<n){
+            System.out.println(arr[k][0]+" "+arr[k][1]);
+            k++;
+        }
 
 
 
