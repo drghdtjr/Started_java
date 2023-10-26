@@ -13,21 +13,11 @@ public class sort_9_1181 {
             i++;
         }
         int k=0;
-        while(k<n-1){
-            int dex=k;
-            int j=k+1;
-            while(j<n){
-                if(arr[j].length()<arr[dex].length()){
-                    dex=j;
-
-                }
-                j++;
-            }
-            String temp=arr[i];
-            arr[i]=arr[dex];
-            arr[dex]=temp;
+        while(k<n){
+            int min=Integer.MAX_VALUE;
             k++;
         }
+
         int j=0;
         while(j<n){
             System.out.println(arr[j]);
