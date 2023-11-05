@@ -11,9 +11,7 @@ public class bac_8_1253 {
             arr[i]= sc.nextInt();
         }
 
-    }
-
-    public static void main(String[] args) {
 
     }
+
 }
