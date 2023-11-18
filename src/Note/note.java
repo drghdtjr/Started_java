@@ -4,40 +4,29 @@ import java.util.Scanner;
 
 public class note {
     public static void main(String[] args) {
+        // 스트링 단어에 해당하는 알파뱃이 있으면 +1
         Scanner sc=new Scanner(System.in);
-        int arr[][]=new int[10][10];
-        for(int i=0;i<10;i++){
-            for(int j=0; j<10;j++){
-                arr[i][j]= sc.nextInt();
-            }
+        String s= sc.next();
+        int arr[]=new int[26];
+        for(int i=0;i<26;i++){
+            arr[i]=0;
         }
-        int i=1;
-        int k=1;
-        while(true){
-            if(arr[i][k]==0){
-                arr[i][k]=9;
-                k++;
+        int i=0;
+        while(i<s.length()){
+            int num=s.charAt(i)-'a';
+            int j=0;
+            while(j<26){
+                if(j==num){
+                    arr[j]++;
+                }
+                j++;
             }
-            else if(arr[i][k]==1){
-                k--;
-                i++;
-            }
-            else if(arr[i][k]==2){
-                arr[i][k]=9;
-                break;
-            }
-            else if(arr[i+1][k]!=1&&arr[i][k+1]!=1){
-                arr[i][k]=9;
-                break;
-            }
+            i++;
         }
-
-
-        for(int a=0;a<10;a++){
-            for(int j=0; j<10;j++){
-                System.out.print(arr[a][j]);
-            }
-            System.out.println();
+        int k=0;
+        while(k<26){
+            System.out.println(arr[k]);
+            k++;
         }
 
 
